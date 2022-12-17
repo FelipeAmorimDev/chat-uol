@@ -1,0 +1,39 @@
+<li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item normal-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span>  para <span class="text-bold">Todos</span> : Bom dia
+        </li>
+        <li class="chat-msg__item normal-msg">
+          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> para <span class="text-bold">João</span>: Oi João :)
+        </li>
+        <li class="chat-msg__item private-msg">
+          <span class="time-style">(09:21:45)</span>  <span class="text-bold">João</span> reservadamente para <span class="text-bold">Maria</span> : Oi gatinha quer tc?
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> sai da sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>
+        <li class="chat-msg__item status-msg">
+          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
+        </li>

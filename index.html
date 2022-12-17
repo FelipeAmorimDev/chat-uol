@@ -13,68 +13,41 @@
 </head>
 
 <body>
-  <header class="header-container">
-    <a href="./index.html"><img src="./assets/logo.svg" alt="Logo Chat UOl"></a>
-    <button><img src="./assets/users-chat.svg" alt="Chat Users"></button>
-  </header>
+ 
+  <div class="joinchat-section">
+    <a href="./index.html"><img src="./assets/logo-join.svg" alt="Uol Logo"></a>
 
-  <main class="chat-msgs__container">
+    <div class="joinchat__form-join">
+      <form>
+        <input type="text" name="user" id="user" placeholder="Digite o seu nome">
+        <input type="submit" value="Entrar">
+        <p class="error-msg d-none"></p>
+      </form>
+    </div>
+  </div>
+
+  <main class="chat-msgs__container d-none">
+    <header class="header-container">
+      <a href="./index.html"><img src="./assets/logo.svg" alt="Logo Chat UOl"></a>
+      <button><img src="./assets/users-chat.svg" alt="Chat Users"></button>
+    </header>
+    <div class="chat-msgs__container">
     <section class="chat-msgs__display">
       <ul class="chat-msgs__list">
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span>  para <span class="text-bold">Todos</span> : Bom dia
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> para <span class="text-bold">João</span>: Oi João :)
-        </li>
-        <li class="chat-msg__item private-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">João</span> reservadamente para <span class="text-bold">Maria</span> : Oi gatinha quer tc?
-        </li>
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> sai da sala...
-        </li>
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span>  para <span class="text-bold">Todos</span> : Bom dia
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> para <span class="text-bold">João</span>: Oi João :)
-        </li>
-        <li class="chat-msg__item private-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">João</span> reservadamente para <span class="text-bold">Maria</span> : Oi gatinha quer tc?
-        </li>
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> sai da sala...
-        </li>
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span> entra na sala...
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span> <span class="text-bold">João</span>  para <span class="text-bold">Todos</span> : Bom dia
-        </li>
-        <li class="chat-msg__item normal-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> para <span class="text-bold">João</span>: Oi João :)
-        </li>
-        <li class="chat-msg__item private-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">João</span> reservadamente para <span class="text-bold">Maria</span> : Oi gatinha quer tc?
-        </li>
-        <li class="chat-msg__item status-msg">
-          <span class="time-style">(09:21:45)</span>  <span class="text-bold">Maria</span> sai da sala...
-        </li>
+              
       </ul>
     </section>
-  </main>
+  </div>
   <footer class="footer__container">
     <form>
       <input type="text" name="message" id="message" placeholder="Escreva aqui...">
       <button><img src="./assets/submit.svg" alt="" aria-hidden="true"></button>
     </form>
+    </div>
   </footer>
+  </main>
+
+ 
 
 
   <script src="./script/app.js"></script>

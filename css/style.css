@@ -1,26 +1,30 @@
 /* Geral */
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 0.8755rem;
   line-height: 1.172;
   margin: 0;
 }
 
-h1,h2,h3,p{
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-ul,li{
+ul,
+li {
   margin: 0px;
   padding: 0px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
@@ -31,7 +35,9 @@ button {
   cursor: pointer;
 }
 
-.header-container{
+
+
+.header-container {
   padding: 16px 22px 11px 22px;
   display: flex;
   justify-content: space-between;
@@ -44,63 +50,65 @@ button {
 }
 
 /* Boardmmsg */
-.chat-msgs__container{
+.chat-msgs__container {
   background-color: #F3F3F3;
-  height: 100vh
+
 }
 
-.chat-msgs__display{
+.chat-msgs__display {
+  min-height: 100vh;
   padding-top: 26px;
 }
 
-.chat-msg__item{
+.chat-msg__item {
   padding: 12px 6px;
-
+  border-radius: 2px;
 }
 
-.chat-msg__item + .chat-msg__item{
-margin-top: 4px;
+.chat-msg__item+.chat-msg__item {
+  margin-top: 4px;
 }
-.status-msg{
+
+.status-msg {
   background-color: #DCDCDC;
 }
 
-.private-msg{
+.private-msg {
   background-color: #FFDEDE;
 }
 
-.normal-msg{
+.normal-msg {
   background-color: #fff;
 }
 
 /* MSG STYLE */
 
-.time-style{
+.time-style {
   color: #AAAAAA;
   font-weight: 400;
 }
 
-.text-bold{
+.text-bold {
   font-weight: 700;
 }
 
 /* enviar msg */
-.footer__container{
+.footer__container {
   position: sticky;
   bottom: 0;
   background-color: #fff;
   padding: 27px 18px;
-  
+
 }
 
-.footer__container form{
+.footer__container form {
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 14px;
 }
 
-.footer__container form input[type='text']{
+.footer__container form input[type='text'] {
   padding: 8px;
   font-family: Roboto;
   font-size: 18px;
@@ -110,4 +118,61 @@ margin-top: 4px;
   letter-spacing: 0em;
   text-align: left;
   border: none;
+}
+
+/* Login menu */
+
+.joinchat-section {
+  max-width: 260px;
+  margin: 72px auto 0px;
+  display: grid;
+  justify-items: center;
+}
+
+.joinchat__form-join form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinchat__form-join form input[type="submit"] {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #696969;
+  background: #E7E7E7;
+  border-radius: 9px;
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+
+#user {
+  width: 100%;
+  margin: 94px 0px 15px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 0px;
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+
+}
+
+.error-msg{
+  margin-top: 10px;
+  color: rgb(231, 47, 41);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.d-none {
+  display: none;
 }
