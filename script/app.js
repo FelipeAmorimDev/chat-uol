@@ -9,11 +9,12 @@ async function joinChatRoom(name){
   }
 
   const tryingJoinChar = await fetch('https://mock-api.driven.com.br/api/v6/uol/participants',options)
-  console.log(tryingJoinChar.status)
   const dataJson = await tryingJoinChar.text()
   
   if(dataJson === 'OK'){
     console.log('Entrou no chat')
+    sendMsgToChat('diegolodddtd','todos','teste novo','message')
+    getChatMessage()
   }
 }
 
@@ -39,13 +40,34 @@ async function getChatMessage(){
   console.log(jsonData)
 }
 
+// Criar EnviarMsgRequisition
+async function sendMsgToChat(from,to,text,type){
 
-getChatMessage()
-console.log(joinChatRoom('donavsan'))
+const postData = {
+	from: from,
+	to: to,
+	text: text,
+	type: type
+}
+
+let options = {
+  method: 'POST',
+  headers: {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  body:JSON.stringify(postData)
+}
+
+const sendPostRequisition = await fetch('https://mock-api.driven.com.br/api/v6/uol/messages',options)
+const getResponseInText = await sendPostRequisition.text()
+}
+
+
+joinChatRoom('diegolodddtd')
 setInterval(() => {
-  console.log(keepOnlineInChat('donavan'))
+  keepOnlineInChat('diegolodddtd')
 },5000)
 
 
 
-// Criar EnviarMsgRequisition
+
