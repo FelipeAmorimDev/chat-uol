@@ -61,7 +61,7 @@ async function getChatMessage() {
   msgsData.forEach(msg => {
     const msgItemElement = document.createElement('LI');
     if (msg.type === 'status') {
-      const statusTemplate = `<span class="time-style">${msg.time}</span> <span class="text-bold">${msg.from}</span> entra na sala...`
+      const statusTemplate = `<span class="time-style">${msg.time}</span> <span class="text-bold">${msg.from}</span> ${msg.text}..`
 
       msgItemElement.setAttribute('class', 'chat-msg__item status-msg')
       msgItemElement.innerHTML = statusTemplate
