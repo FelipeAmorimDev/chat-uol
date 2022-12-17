@@ -1,4 +1,3 @@
-
 async function joinChatRoom(name){
   let options = {
     method: 'POST',
@@ -13,8 +12,6 @@ async function joinChatRoom(name){
   
   if(dataJson === 'OK'){
     console.log('Entrou no chat')
-    sendMsgToChat('diegolodddtd','todos','teste novo','message')
-    getChatMessage()
   }
 }
 
@@ -40,16 +37,13 @@ async function getChatMessage(){
   console.log(jsonData)
 }
 
-// Criar EnviarMsgRequisition
 async function sendMsgToChat(from,to,text,type){
-
 const postData = {
 	from: from,
 	to: to,
 	text: text,
 	type: type
 }
-
 let options = {
   method: 'POST',
   headers: {
@@ -62,11 +56,6 @@ const sendPostRequisition = await fetch('https://mock-api.driven.com.br/api/v6/u
 const getResponseInText = await sendPostRequisition.text()
 }
 
-
-joinChatRoom('diegolodddtd')
-setInterval(() => {
-  keepOnlineInChat('diegolodddtd')
-},5000)
 
 
 
