@@ -1,6 +1,9 @@
 /* Geral */
 
 body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8755rem;
+  line-height: 1.172;
   margin: 0;
 }
 
@@ -22,6 +25,12 @@ img{
   display: block;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .header-container{
   padding: 16px 22px 11px 22px;
   display: flex;
@@ -29,10 +38,76 @@ img{
   align-items: center;
   background-color: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  width: calc(100% - 44px);
 }
 
-.header-container > button {
-  background-color: transparent;
+/* Boardmmsg */
+.chat-msgs__container{
+  background-color: #F3F3F3;
+  height: 100vh
+}
+
+.chat-msgs__display{
+  padding-top: 26px;
+}
+
+.chat-msg__item{
+  padding: 12px 6px;
+
+}
+
+.chat-msg__item + .chat-msg__item{
+margin-top: 4px;
+}
+.status-msg{
+  background-color: #DCDCDC;
+}
+
+.private-msg{
+  background-color: #FFDEDE;
+}
+
+.normal-msg{
+  background-color: #fff;
+}
+
+/* MSG STYLE */
+
+.time-style{
+  color: #AAAAAA;
+  font-weight: 400;
+}
+
+.text-bold{
+  font-weight: 700;
+}
+
+/* enviar msg */
+.footer__container{
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 27px 18px;
+  
+}
+
+.footer__container form{
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+}
+
+.footer__container form input[type='text']{
+  padding: 8px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
   border: none;
-  cursor: pointer;
 }
