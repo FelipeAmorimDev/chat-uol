@@ -4,6 +4,8 @@ const formElement = document.querySelector('.joinchat__form-join form')
 const joinChatSection = document.querySelector('.joinchat-section')
 const messageForm = document.querySelector('.footer__container form')
 
+let htmlTemplate = document.createElement('div')
+
 const loginHandle = event => {
   const username = formElement.user.value
 
@@ -22,7 +24,6 @@ const renderChatmsgByType = msg => {
     insertElementIntoDOM('chat-msg__item status-msg', statusTemplate)
   } else if (msg.type === 'message') {
     insertElementIntoDOM('chat-msg__item normal-msg', msgTemplate)
-
     return
   }
 
@@ -43,7 +44,8 @@ const insertElementIntoDOM = (className, template) => {
   msgItemElement.setAttribute('class', className)
   msgItemElement.innerHTML = template
   chatMsgList.insertAdjacentElement('beforeend', msgItemElement)
-  
+  htmlTemplate.insertAdjacentElement('beforeend', msgItemElement)
+
   msgItemElement.scrollIntoView(true)
 }
 
@@ -82,9 +84,14 @@ async function getChatMessage() {
   const response = await fetch('https://mock-api.driven.com.br/api/v6/uol/messages')
   const msgsData = await response.json()
 
-  chatMsgList.innerHTML = '' // limpando para previnir dos itens serem readicionados ?
-
+  
   msgsData.forEach(renderChatmsgByType)
+  if(chatMsgList.innerHTML !== htmlTemplate.innerHTML){
+     chatMsgList.innerHTML = htmlTemplate.innerHTML
+     const lastItem = document.querySelector("li.chat-msg__item:last-child")
+     lastItem.scrollIntoView(true)
+  }
+  htmlTemplate.innerHTML = ''
 }
 
 async function keepOnlineInChat(options) {
